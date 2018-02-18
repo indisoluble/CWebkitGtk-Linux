@@ -1,12 +1,7 @@
-// swift-tools-version:4.0
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
 import PackageDescription
 
 let package = Package(
     name: "CWebkitGtk-Linux",
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
+    pkgConfig: "webkitgtk-3.0",
+    providers: [.apt(["libwebkitgtk-3.0-dev", "clang"])]
 )
