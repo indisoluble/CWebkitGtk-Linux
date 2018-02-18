@@ -1,0 +1,5 @@
+module CWebkitGtk_Linux [system] {
+  header "/usr/include/CWebkitGtk_Linux.h"
+  link "CWebkitGtk_Linux"
+  export *
+}
