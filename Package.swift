@@ -1,7 +1,14 @@
+// swift-tools-version:5.0
+
 import PackageDescription
 
 let package = Package(
     name: "CWebkitGtk-Linux",
     pkgConfig: "webkitgtk-3.0",
-    providers: [.Apt("libwebkitgtk-3.0-dev clang")]
+    providers: [
+        .apt([
+            "libwebkitgtk-3.0-dev",
+            "clang"
+        ])
+    ]
 )
