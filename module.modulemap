@@ -1,0 +1,20 @@
+module CWebkitGtk_Linux [system] {
+  header "headers.h"
+  header "/usr/include/webkitgtk-3.0/webkit/webkit.h"
+
+  link "atk-1.0"
+  link "cairo"
+  link "cairo-gobject"
+  link "gdk-3"
+  link "gdk_pixbuf-2.0"
+  link "gio-2.0"
+  link "glib-2.0"
+  link "gobject-2.0"
+  link "gtk-3"
+  link "javascriptcoregtk-3.0"
+  link "pango-1.0"
+  link "pangocairo-1.0"
+  link "soup-2.4"
+
+  export *
+}
